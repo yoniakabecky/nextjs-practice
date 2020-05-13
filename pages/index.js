@@ -1,5 +1,12 @@
+import Layout from "../components/layout";
+import Hero from "../components/hero";
+
 function Home() {
-  return <h1>Hello world!</h1>;
+  return (
+    <Layout>
+      <Hero />
+    </Layout>
+  );
 }
 
 export default Home;
