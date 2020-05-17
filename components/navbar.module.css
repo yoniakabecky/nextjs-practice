@@ -1,5 +1,7 @@
 .navWrapper {
   display: flex;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 .logo {
@@ -21,4 +23,24 @@
 
 .menuWrapper > li > a {
   font-size: 2rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: aquamarine;
+  transform: translateY(0);
+  transition: transform 0.4s ease;
+}
+
+.headerHide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: aquamarine;
+  transition: transform 0.4s ease;
+  transform: translateY(-150%);
 }
