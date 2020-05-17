@@ -1,0 +1,24 @@
+.navWrapper {
+  display: flex;
+}
+
+.logo {
+  font-size: 4rem;
+}
+
+.flexGrow {
+  flex-grow: 1;
+}
+
+.menuWrapper {
+  display: flex;
+  list-style: none;
+}
+
+.menuWrapper > li {
+  margin: 1.5rem;
+}
+
+.menuWrapper > li > a {
+  font-size: 2rem;
+}
