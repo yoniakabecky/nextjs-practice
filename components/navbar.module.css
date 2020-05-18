@@ -33,6 +33,7 @@
   background: aquamarine;
   transform: translateY(0);
   transition: transform 0.4s ease;
+  z-index: 1;
 }
 
 .headerHide {
@@ -43,4 +44,5 @@
   background: aquamarine;
   transition: transform 0.4s ease;
   transform: translateY(-150%);
+  z-index: 1;
 }
