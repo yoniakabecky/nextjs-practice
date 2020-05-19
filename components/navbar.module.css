@@ -31,18 +31,6 @@
   left: 0;
   width: 100%;
   background: aquamarine;
-  transform: translateY(0);
   transition: transform 0.4s ease;
-  z-index: 1;
-}
-
-.headerHide {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: aquamarine;
-  transition: transform 0.4s ease;
-  transform: translateY(-150%);
   z-index: 1;
 }
