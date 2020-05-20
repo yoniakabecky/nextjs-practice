@@ -97,6 +97,7 @@
   width: 50%;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .heroImageGirl {
