@@ -8,6 +8,7 @@ const menus = [
   { name: "Contact", link: "/Contact" },
   { name: "Blog", link: "/blog" },
 ];
+
 const headerHight = 64;
 
 const Navbar = () => {
@@ -35,7 +36,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={showNav ? styles.header : styles.headerHide}>
+    <header className={`${styles.header} header`}>
       <nav className={styles.navWrapper}>
         <div className={styles.logo}>Logo</div>
         <span className={styles.flexGrow} />
@@ -49,6 +50,11 @@ const Navbar = () => {
           ))}
         </ul>
       </nav>
+      <style jsx>{`
+        .header {
+          transform: ${showNav ? "translateY(0)" : "translateY(-150%)"};
+        }
+      `}</style>
     </header>
   );
 };
