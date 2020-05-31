@@ -5,6 +5,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "animejs": "^3.2.0",
     "framer-motion": "^1.11.0",
     "gsap": "^3.2.6",
     "next": "^9.3.6",

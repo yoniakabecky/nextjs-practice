@@ -1,9 +1,10 @@
 import Layout from "../components/layout";
+import SubPageHero from "../components/subPageHero";
 
 function About() {
   return (
     <Layout>
-      <h1>About</h1>
+      <SubPageHero title="about" subTitle="I am the answer" />
     </Layout>
   );
 }
