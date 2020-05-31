@@ -4,7 +4,7 @@ import SubPageHero from "../components/subPageHero";
 function About() {
   return (
     <Layout>
-      <SubPageHero title="about" subTitle="hahahahaha" />
+      <SubPageHero title="about" subTitle="I am the answer" />
     </Layout>
   );
 }
