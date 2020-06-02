@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Layout from "../components/layout";
+import SubPageHero3 from "../components/subPageFramer";
 
 function Blog() {
   return (
     <Layout>
-      <h1>Blog</h1>
+      <SubPageHero3 title="blog blog blog" subTitle="this is subtitle" />
       <Link href="/posts/blog-post-one">
         <a>First blog</a>
       </Link>
