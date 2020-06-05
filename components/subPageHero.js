@@ -28,7 +28,7 @@ export default function SubPageHero({ title, subTitle }) {
           translateY: [10, 0],
           duration: 500,
         },
-        "-=500"
+        "-=800"
       );
   }, [titleRef, subTitleRef]);
 

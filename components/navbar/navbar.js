@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import useWindowSize from "../../hooks/useWindowSize";
+import DesktopMenu from "./desktopMenu";
+import MobileMenu from "./mobileMenu";
+import MobileMenuToggle from "./mobileMenuToggle";
 import styles from "./navbar.module.css";
 
 const menus = [
@@ -13,6 +16,8 @@ const headerHight = 64;
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(true);
+  let windowSize = useWindowSize();
+  let isMobile = windowSize.width < 1024;
 
   let scrollPos = 0;
   let lastScrollPos = 0;
@@ -40,15 +45,11 @@ const Navbar = () => {
       <nav className={styles.navWrapper}>
         <div className={styles.logo}>Logo</div>
         <span className={styles.flexGrow} />
-        <ul className={styles.menuWrapper}>
-          {menus.map((menu, key) => (
-            <li key={key}>
-              <Link href={menu.link}>
-                <a>{menu.name}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {isMobile ? (
+          <MobileMenu menus={menus} windowSize={windowSize} />
+        ) : (
+          <DesktopMenu menus={menus} />
+        )}
       </nav>
       <style jsx>{`
         .header {
