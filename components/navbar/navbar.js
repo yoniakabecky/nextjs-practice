@@ -8,7 +8,7 @@ import styles from "./navbar.module.css";
 const menus = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
-  { name: "Contact", link: "/Contact" },
+  { name: "Contact", link: "/contact" },
   { name: "Blog", link: "/blog" },
 ];
 
